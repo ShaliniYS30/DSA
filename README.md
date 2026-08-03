@@ -7,15 +7,7 @@ This repository contains my solutions to DSA problems as I prepare for software 
 
 ## Topics Covered
 - Basic Maths
-- Arrays
-- Binary Search
-- Strings
-- Linked List
-- Recursion
-- Stacks & Queues
-- Trees
-- Graphs
-- Dynamic Programming
+- Arrays(in progress)
 
 ## Platforms
 - Striver A2Z DSA Sheet
