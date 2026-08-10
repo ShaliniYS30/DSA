@@ -1,7 +1,4 @@
-//Problem:Reverse Integer
-//Platform:leetcode
-//Difficulty:Medium
-//Language:C++
+
 #include<iostream.h>
 using namespace std;
 int main(){
