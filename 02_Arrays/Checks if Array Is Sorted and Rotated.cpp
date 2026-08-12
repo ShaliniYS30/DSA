@@ -1,4 +1,4 @@
-/Problem=check if array is sorted and rotated
+//Problem=check if array is sorted and rotated
 //Platform:leetcode
 //Difficulty:Easy
 //Language:C++
