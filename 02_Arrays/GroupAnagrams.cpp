@@ -10,7 +10,7 @@ class Solution{
             string original=s;
             sort(s.begin(),s.end());
             mp[s].push_back(original);
-        }
+    
         for(auto it:mp){
             ans.push_back(it.second);
         }
