@@ -1,7 +1,9 @@
 //Problem:4sums
 //PLatform:Leetcode
 //difficulty:MEDIUM
-Class Solution {
+#include <bits/stdc++.h>
+using namespace std;
+class Solution {
 public:
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
         
@@ -47,3 +49,21 @@ left++;
 
     }
 };
+int main() {
+
+    vector<int> nums = {1, 0, -1, 0, -2, 2};
+    int target = 0;
+
+    Solution obj;
+
+    vector<vector<int>> result = obj.fourSum(nums, target);
+
+    for(auto &quad : result) {
+        for(int x : quad) {
+            cout << x << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
