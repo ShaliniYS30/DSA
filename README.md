@@ -7,7 +7,9 @@ This repository contains my solutions to DSA problems as I prepare for software 
 
 ## Topics Covered
 - Basic Maths
-- Arrays(in progress)
+- Arrays
+- Binary Search
+- Trees(in Progress)
 
 ## Platforms
 - Striver A2Z DSA Sheet
