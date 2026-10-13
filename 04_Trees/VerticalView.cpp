@@ -32,10 +32,10 @@ vector<vector<int>> verticalTraversal(TreeNode* root) {
         return ans;
     }
 
-    // column -> row -> values
+    
     map<int, map<int, multiset<int>>> nodes;
 
-    // node -> {column, row}
+    
     queue<pair<TreeNode*, pair<int, int>>> q;
 
     q.push({root, {0, 0}});
@@ -49,10 +49,10 @@ vector<vector<int>> verticalTraversal(TreeNode* root) {
         int column = p.second.first;
         int row = p.second.second;
 
-        // Store the node
+        
         nodes[column][row].insert(node->val);
 
-        // Left child
+        
         if (node->left != nullptr) {
             q.push({
                 node->left,
@@ -60,7 +60,7 @@ vector<vector<int>> verticalTraversal(TreeNode* root) {
             });
         }
 
-        // Right child
+    
         if (node->right != nullptr) {
             q.push({
                 node->right,
@@ -69,15 +69,15 @@ vector<vector<int>> verticalTraversal(TreeNode* root) {
         }
     }
 
-    // Read column by column
+    
     for (auto columnPair : nodes) {
 
         vector<int> columnValues;
 
-        // Read row by row
+        
         for (auto rowPair : columnPair.second) {
 
-            // multiset gives sorted values
+            
             for (int value : rowPair.second) {
                 columnValues.push_back(value);
             }
@@ -90,22 +90,6 @@ vector<vector<int>> verticalTraversal(TreeNode* root) {
 }
 
 int main() {
-
-    /*
-              1
-             / \
-            2   3
-           / \ / \
-          4  5 6  7
-
-        Vertical Traversal:
-
-        [-2] -> 4
-        [-1] -> 2
-        [ 0] -> 1 5 6
-        [ 1] -> 3
-        [ 2] -> 7
-    */
 
     TreeNode* root = new TreeNode(1);
 
