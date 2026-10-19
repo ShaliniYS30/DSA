@@ -9,6 +9,7 @@ This repository contains my solutions to DSA problems as I prepare for software 
 - Basic Maths
 - Arrays
 - Binary Search
+- Strings(Basic)
 - Trees(in Progress)
 
 ## Platforms
