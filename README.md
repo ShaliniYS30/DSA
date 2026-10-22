@@ -15,6 +15,7 @@ This repository contains my solutions to DSA problems as I prepare for software 
 ## Platforms
 - Striver A2Z DSA Sheet
 - LeetCode
+-Geeksforgeeks
 
 ## Language
 - C++
