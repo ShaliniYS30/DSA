@@ -10,7 +10,8 @@ This repository contains my solutions to DSA problems as I prepare for software 
 - Arrays
 - Binary Search
 - Strings(Basic)
-- Trees(in Progress)
+- Trees
+- Linked list(in progress)
 
 ## Platforms
 - Striver A2Z DSA Sheet
