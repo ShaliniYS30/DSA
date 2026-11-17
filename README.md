@@ -11,13 +11,14 @@ This repository contains my solutions to DSA problems as I prepare for software 
 - Binary Search
 - Strings(Basic)
 - Trees
-- Linked list(in progress)
+-graphs(progress)
+
 
 ## Platforms
 - Striver A2Z DSA Sheet
 - LeetCode
 - Geeksforgeeks
-
+-hackerrank 
 
 ## Language
 - C++
