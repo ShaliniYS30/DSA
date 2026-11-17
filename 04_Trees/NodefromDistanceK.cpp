@@ -3,6 +3,26 @@
 //Difficulty:Medium
 //Language:C++
 
+
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <unordered_map>
+#include <unordered_set>
+using namespace std;
+
+struct TreeNode {
+    int val;
+    TreeNode* left;
+    TreeNode* right;
+
+    TreeNode(int x) {
+        val = x;
+        left = NULL;
+        right = NULL;
+    }
+};
+
 class Solution {
 public:
     unordered_map<TreeNode*, TreeNode*> parent;
@@ -72,3 +92,45 @@ public:
         return ans;
     }
 };
+
+int main() {
+    /*
+            3
+           / \
+          5   1
+         / \ / \
+        6  2 0  8
+          / \
+         7   4
+    */
+
+    TreeNode* root = new TreeNode(3);
+    root->left = new TreeNode(5);
+    root->right = new TreeNode(1);
+
+    root->left->left = new TreeNode(6);
+    root->left->right = new TreeNode(2);
+
+    root->right->left = new TreeNode(0);
+    root->right->right = new TreeNode(8);
+
+    root->left->right->left = new TreeNode(7);
+    root->left->right->right = new TreeNode(4);
+
+    TreeNode* target = root->left;
+    int k = 2;
+
+    Solution sol;
+    vector<int> result = sol.distanceK(root, target, k);
+
+    cout << "Nodes at distance " << k
+         << " from target " << target->val << ": ";
+
+    for (int value : result) {
+        cout << value << " ";
+    }
+
+    cout << endl;
+
+    return 0;
+}
